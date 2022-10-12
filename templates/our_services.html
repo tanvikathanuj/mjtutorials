@@ -1,0 +1,149 @@
+{% load static %}
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="{% static 'style.css' %}"
+		<link rel="stylesheet" type="text/css" href="{% static 'our_services.css' %}">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MJ Tutorials</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    </head>
+    <body>
+      <nav class="navbar">
+        <div class="content">
+          <div class="logo">
+            <a href="#">MJ Tutorial</a>
+          </div>
+          <ul class="menu-list">
+            <div class="icon cancel-btn">
+              <i class="fas fa-times"></i>
+            </div>
+            <li><a href="/">Home</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Sign Up</a></li>
+            <li><a href="#">Login</a></li>
+  
+          </ul>
+          
+        </div>
+      </nav>
+	
+	 <h1> <br><br> </h1>
+	 <div class="wrapper">
+		<div class="header">
+			<h1>Our Services</h1>
+		</div>	
+		<div class="box_wrapper">
+			<div class="box_row">
+				<div class="box_col box_col_1">
+					<div class="box_img">
+						<img src="https://www.reliablesoft.net/wp-content/uploads/2021/12/best-online-course-platforms.webp" width="200px" height="200px" alt="onlinecourses">
+					</div>
+					<div class="box_title">
+						<br><p><b>ONLINE COURSES</b></p> <br>
+					</div>
+					<div class="box_des">
+						An online course is any web-based class that can be viewed on a 
+						computer, tablet or mobile device. Alison is one of the world’s 
+						largest platforms for free online courses , allowing you to 
+						access instruction and materials wherever and whenever it 
+						works best for you.
+					</div>
+				</div>
+				<div class="box_col box_col_2">
+					<div class="box_img">
+						<img src="https://media.istockphoto.com/photos/elearning-concept-online-classes-picture-id1140691163?k=20&m=1140691163&s=612x612&w=0&h=3Cheju65N4DYbgsH-bfFj_-6T_wZKkf_svoj0uRLLtg=" width="200px" height="200px" alt="elearning">
+					</div>
+					<div class="box_title">
+						<br><p><b>E-LEARNING</b></p> <br>
+					</div>
+					<div class="box_des">
+						A learning system based on formalised teaching but with the help 
+						of electronic resources is known as E-learning. While teaching can
+						be based in or out of the classrooms, the use of computers and the 
+						Internet forms the major component of E-learning. E-learning can 
+						also be termed as a network enabled transfer of skills and knowledge,
+						and the delivery of education is made to a large number 
+						of recipients at the same or different times. Earlier, it was not
+						accepted wholeheartedly as it was assumed that this system lacked the
+						human element required in learning.
+	
+					</div>
+				</div>
+				<div class="box_col box_col_3">
+					<div class="box_img">
+						<img src="https://blog.coursify.me/wp-content/uploads/2015/08/live-online-classes-coursifyme.jpg" width="200px" height="200px" alt="liveclasses">
+					</div>
+					<div class="box_title">
+						<br><p><b>LIVE CLASSES</b></p><br>
+					</div>
+					<div class="box_des">
+						Classes with this format meet at a regularly scheduled time online. You 
+						can interact live with your instructor and classmates as you all work 
+						together at the same time and same days. You complete homework 
+						assignments outside of this dedicated class time, just like in-person classes.
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+        </div>
+		</div>
+		<div class="banner"></div>
+	  
+      <script>
+        const body = document.querySelector("body");
+        const navbar = document.querySelector(".navbar");
+        const menuBtn = document.querySelector(".menu-btn");
+        const cancelBtn = document.querySelector(".cancel-btn");
+        menuBtn.onclick = ()=>{
+          navbar.classList.add("show");
+          menuBtn.classList.add("hide");
+          body.classList.add("disabled");
+        }
+        cancelBtn.onclick = ()=>{
+          body.classList.remove("disabled");
+          navbar.classList.remove("show");
+          menuBtn.classList.remove("hide");
+        }
+        window.onscroll = ()=>{
+          this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+        }
+      </script>
+       
+       <!<img src="https://thumbs.dreamstime.com/b/asian-student-boy-video-conference-e-learning-teacher-computer-living-room-home-online-education-internet-social-187311773.jpg" class="feature-img"> >
+      
+	  <footer class="footer">
+  	 <div class="container">
+  	 	<div class="row">
+  	 		<div class="footer-col">
+  	 			<h4>company</h4>
+  	 			<ul>
+  	 				<li><a href="/about">about us</a></li>
+  	 				<li><a href="/our_services">our services</a></li>
+  	 				<li><a href="/privacy_policy">privacy policy</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>get help</h4>
+  	 			<ul>
+  	 				<li><a href="/email">email: xyz@gmail.com</a></li>
+					<li style="color:#bbbbbb";> phone: 9876543210 </li>
+					<li><a href="/faq">FAQ</a></li>
+  	 				<li><a href="#">payment options</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>follow us</h4>
+  	 			<div class="social-links">
+  	 				<a href="/facebook"><i class="fab fa-facebook-f"></i></a>
+  	 				<a href="/twitter"><i class="fab fa-twitter"></i></a>
+  	 				<a href="/instagram"><i class="fab fa-instagram"></i></a>
+  	 				<a href="/linkedin"><i class="fab fa-linkedin-in"></i></a>
+  	 			</div>
+  	 		</div>
+  	 	</div>
+  	 </div>
+  </footer>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+*{
+    background-color: rgb(206, 240, 241);
+}
+
+.header{
+    font-style: italic;
+}
+
+
+
+h1{
+    color: rgb(0, 240, 20);
+}
+
+h2{
+    color: rgb(109, 0, 235);
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }

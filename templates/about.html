@@ -1,0 +1,101 @@
+{% load static %}
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="{% static 'style.css' %}"
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MJ Tutorials</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    </head>
+    <body>
+      <nav class="navbar">
+        <div class="content">
+          <div class="logo">
+            <a href="#">MJ Tutorial</a>
+          </div>
+          <ul class="menu-list">
+            <div class="icon cancel-btn">
+              <i class="fas fa-times"></i>
+            </div>
+            <li><a href="/">Home</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Sign Up</a></li>
+            <li><a href="#">Login</a></li>
+          </ul>
+          
+        </div>
+      </nav>
+	  <div class="contents">
+	 <h1> <br> </h1>
+	 <h3>About us</h3>
+            <p>We are providing unlimited knowldge for all the students and any subject
+				Our mission is to empower young Students to be the inventors and creators.
+	
+	In a world where so much is being done for technology and so little for the environment, education is not even a part of most discussions.
+    We at MJ Tutorials believe that by widening the reach of education, by making it freely available, so much can be achieved.
+    "wouldn't it be great, to have a website, with simple tutorials just like a friend would teach you!", and MJ Tutorial was born.
+</p>        
+</div>
+      <div class="banner"></div>
+	  
+      <div class="about">
+     
+          
+      </div>
+    
+      <script>
+        const body = document.querySelector("body");
+        const navbar = document.querySelector(".navbar");
+        const menuBtn = document.querySelector(".menu-btn");
+        const cancelBtn = document.querySelector(".cancel-btn");
+        menuBtn.onclick = ()=>{
+          navbar.classList.add("show");
+          menuBtn.classList.add("hide");
+          body.classList.add("disabled");
+        }
+        cancelBtn.onclick = ()=>{
+          body.classList.remove("disabled");
+          navbar.classList.remove("show");
+          menuBtn.classList.remove("hide");
+        }
+        window.onscroll = ()=>{
+          this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+        }
+      </script>
+       
+       <!<img src="https://thumbs.dreamstime.com/b/asian-student-boy-video-conference-e-learning-teacher-computer-living-room-home-online-education-internet-social-187311773.jpg" class="feature-img"> >
+      
+	  <footer class="footer">
+  	 <div class="container">
+  	 	<div class="row">
+  	 		<div class="footer-col">
+  	 			<h4>company</h4>
+  	 			<ul>
+  	 				<li><a href="/about">about us</a></li>
+  	 				<li><a href="/our_services">our services</a></li>
+  	 				<li><a href="/privacy_policy">privacy policy</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>get help</h4>
+  	 			<ul>
+  	 				<li><a href="/email">email: xyz@gmail.com</a></li>
+					<li style="color:#bbbbbb";> phone: 9876543210 </li>
+					<li><a href="/faq">FAQ</a></li>
+  	 				<li><a href="#">payment options</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>follow us</h4>
+  	 			<div class="social-links">
+  	 				<a href="/facebook"><i class="fab fa-facebook-f"></i></a>
+  	 				<a href="/twitter"><i class="fab fa-twitter"></i></a>
+  	 				<a href="/instagram"><i class="fab fa-instagram"></i></a>
+  	 				<a href="/linkedin"><i class="fab fa-linkedin-in"></i></a>
+  	 			</div>
+  	 		</div>
+  	 	</div>
+  	 </div>
+  </footer>
+    </body>
+</html>
